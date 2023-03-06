@@ -294,11 +294,6 @@ address {
   border-radius: 50%;
 }
 
-.icon-list:hover,
-.icon-list:focus {
-  color: var(--brand-color);
-}
-
 .title-team {
   font-style: normal;
   font-weight: 700;
@@ -326,9 +321,30 @@ address {
   display: flex;
   justify-content: center;
   padding: 20px;
-
   width: 170px;
   height: 81px;
+}
+
+.content-clientes:hover,
+.content-clientes:focus {
+  border: 1px solid #2196f3;
+}
+
+.icon-list:hover {
+  fill: #2196f3;
+}
+
+.svg {
+  fill: #757575;
+}
+
+svg {
+  fill: #757575;
+}
+
+.content-clientes:hover + .svg,
+.content-clientes:focus + .svg {
+  fill: #2196f3;
 }
 
 .item-footer {
