@@ -1,3 +1,66 @@
+:root {
+  --color: #212121;
+  --brand-color: #2196f3;
+  --font-color: #757575;
+  --hover-color: var(--brand-color);
+}
+
+body {
+  font-family: 'Roboto', 'Arial', Sans-serif;
+  color: var(--color);
+  line-height: 1.3rem;
+}
+
+.nav-container {
+  display: flex;
+  gap: 90px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.contact-item {
+  color: var(--font-color);
+}
+
+.CONTACT-item:hover {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+.contact-item:hover {
+  color: var(--brand-color);
+}
+
+.current {
+  color: var(--brand-color);
+}
+
 .box {
   height: 600px;
   flex-direction: column;
@@ -85,10 +148,7 @@ address {
   padding: 0px;
   margin: 0;
   list-style: none;
-}
-
-.menu > .item:not(:last-child) {
-  margin-right: 10px;
+  gap: 50px;
 }
 
 .menu .a {
@@ -96,16 +156,6 @@ address {
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-.menu .a-heather {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: var(--font-color);
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -125,10 +175,6 @@ address {
   display: flex;
 
   list-style: none;
-}
-
-.item {
-  padding: 5px;
 }
 
 .icon-box {
@@ -175,18 +221,31 @@ address {
 .item-image {
   display: inline;
   padding: 5px;
+  position: relative;
 }
 
-.item-image:hover {
-  color: white;
-  background-color: var(--brand-color);
+.item-background {
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 10px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-image-text {
+  color: #ffffff;
+  position: absolute;
+  align-items: center;
+  bottom: 20px;
 }
 
 .list-team {
   display: flex;
   margin: 20px;
   list-style: none;
-  justify-content: center;
 }
 
 .item-team {
@@ -215,15 +274,29 @@ address {
   background: #ffffff;
 }
 
+address {
+  display: flex;
+}
 .icon-team {
   display: flex;
   padding: 30px;
   list-style: none;
   justify-content: center;
+  gap: 10px;
 }
 
 .icon-list {
-  margin: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.icon-list:hover,
+.icon-list:focus {
+  color: var(--brand-color);
 }
 
 .title-team {
@@ -352,19 +425,6 @@ address {
 }
 
 /* clases tarea 2 */
-
-body {
-  font-family: 'Roboto', 'Arial', Sans-serif;
-  color: var(--color);
-  line-height: 1.3rem;
-}
-
-:root {
-  --color: #212121;
-  --brand-color: #2196f3;
-  --font-color: #757575;
-  --hover-color: var(--brand-color);
-}
 
 .a:hover {
   color: var(--brand-color);
